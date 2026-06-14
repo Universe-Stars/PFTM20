@@ -1,3 +1,4 @@
+TARGET_DEVICE := pftm20
 # 设备基础配置
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-2a
