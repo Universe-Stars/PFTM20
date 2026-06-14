@@ -1,0 +1,13 @@
+LOCAL_PATH := $(call my-dir)
+
+ifeq ($(TARGET_DEVICE),pftm20)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := recovery
+LOCAL_MODULE_TAGS := optional
+LOCAL_SRC_FILES := recovery.img
+LOCAL_MODULE_CLASS := RECOVERY_EXECUTABLES
+LOCAL_MODULE_PATH := $(TARGET_RECOVERY_ROOT_OUT)
+include $(BUILD_PREBUILT)
+
+endif
